@@ -1,0 +1,139 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #deff8b;
+  margin : 0;
+  padding: 0;
+}
+
+.img-container{
+  position: relative;
+}
+
+.img-container h2{
+  position:absolute;
+  top:0;
+  left:0;
+  color: white;
+}
+
+img {
+  width: 250px;
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (min-width: 360px) and (max-width: 1365px) {
+  .container{
+    width: 100%;
+    margin: 0;
+    padding: 0px;
+  }
+
+  .img-container{
+    width: 325px;
+    height: 200px;
+    padding: 0;
+    margin: 50px auto;
+    background-color: #8cba51;
+    box-shadow: 1px 1px 1px 1px gray;
+  }
+
+  .default{
+
+  }
+
+  .cover-1{
+    object-fit: cover;
+    object-position: 50% 50%;
+  }
+
+  .contain-1{
+    object-fit: contain;
+  }
+
+  .none-1{
+    object-fit: none;
+  }
+
+  .fill-1{
+    object-fit: fill;
+  }
+
+}
+
+@media screen and (min-width: 1366px) {
+  .container {
+    width: 100%;
+    margin: 0;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 5px;
+  }
+
+  .img-container{
+    width: 325px;
+    height: 200px;
+    padding: 0;
+    margin: 0 auto;
+    background-color: #8cba51;
+    box-shadow: 1px 1px 1px 1px gray;
+  }
+
+  .default{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .cover{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .contain{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .none{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
+  .fill{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
+  .cover-1{
+    object-fit: cover;
+    object-position: 50% 50%;
+  }
+
+  .contain-1{
+    object-fit: contain;
+  }
+
+  .none-1{
+    object-fit: none;
+  }
+
+  .fill-1{
+    object-fit: fill;
+  }
+
+}
